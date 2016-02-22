@@ -1,19 +1,21 @@
 ## Welcome to the Pearson Vue internship challenge
 
-This exercise should take between 30 minutes to 2 hours depending on your familiarity with ruby on rails
+This exercise is designed to help you demonstrate some basic knowledge of Ruby On Rails and should
+take between 30 minutes to 2 hours depending on your familiarity with Ruby on Rails and basic Rails
+configuration.
 
 #### Tasks for this assignment
 
-* Clone project
-* Seed the database with our default data
-* Fix initial bug when running application
-* Add ability for a person to schedule a future exam
+* Clone the project
+* Update the configuration to work with your Rails installation (this example uses 4.2.5)
+* Create and Seed the database with our default data
+* Fix an initial bug when running the application (View past reservations should display old reservations)
+* Add the ability for a person to schedule a future exam
 * Add a 'Score' column to the Exam Table and add scores to past exams
-* Create pull request with us so we can review your changes
+* Create a pull request with us so we can review your changes
 
 #### Notes
 - No need to add user login or authentication 
-- Styling your work is not necessary. The site is already attractive enough
-- Once completed make sure to submit a pull request before coming in for our on site interview, 
-we will be going over your work in person
-- No need to spend more than 2 hours on this assignment
+- Styling would be nice, but not required
+- Once completed make sure to submit a pull request before coming in for our on site interview;
+you will lead a presentation of your work with our developers
