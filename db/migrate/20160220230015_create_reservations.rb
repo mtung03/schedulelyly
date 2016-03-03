@@ -6,6 +6,9 @@ class CreateReservations < ActiveRecord::Migration
       t.string :client_last_name
       t.integer :datetime, null: false
 
+      # added a score attribute to each reservation
+      t.integer :score
+
       t.timestamps null: false
     end
   end

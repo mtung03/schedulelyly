@@ -12,6 +12,9 @@ FIRST_NAMES = %w(Jide Matt Greg Leo Todd Steve Tyler Lani Michelle Karen Danny S
 LAST_NAMES = %w(Maloney Fajobi Odonnell Anderson Smith Robinson Sanders Bailey Berry)
 PAST_EXAM_DATES = 15.days.ago.to_i..Time.now.to_i
 
+# exam scores range from 1-100
+EXAM_SCORES = 1..100
+
 
 def create_exam
   Exam.create name: EXAMS.sample, client: CLIENTS.sample
@@ -23,7 +26,10 @@ def create_reservation
   exam.reservations.create(
     client_first_name: FIRST_NAMES.sample,
     client_last_name: LAST_NAMES.sample,
-    datetime:rand(PAST_EXAM_DATES)
+    datetime:rand(PAST_EXAM_DATES),
+
+    # for default data, seed scores with a random score
+    score:rand(EXAM_SCORES)
   )
 end
 

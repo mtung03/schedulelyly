@@ -1,0 +1,17 @@
+<h2>Schedule an Exam</h2>
+<%= form_for @reservation do |f| %>
+	<p>
+		<%= f.label :exam_id %>
+		<%= f.collection_select(:exam_id, Exam.all, :id, :name) %>	
+	</p>
+	<p>
+		<%= f.label :client %>
+		<%= f.text_field :client_first_name %>
+		<%= f.text_field :client_last_name %>
+	</p>
+	<p>
+		<%= f.label :time%>
+		<%= f.datetime_select( :datetime, start_day: 0.days.ago)%>
+	</p>
+	<p><%= f.submit %></p>
+<%end%>

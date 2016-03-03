@@ -4,8 +4,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
-
-
+  
+  resources :reservations   # reservations linked to index page
+  
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20160220230015) do
     t.integer  "exam_id",           limit: 4
     t.string   "client_first_name", limit: 255
     t.string   "client_last_name",  limit: 255
+    t.integer  "score",             limit: 4
     t.integer  "datetime",          limit: 4,   null: false
     t.datetime "created_at",                    null: false
     t.datetime "updated_at",                    null: false
