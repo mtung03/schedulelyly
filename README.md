@@ -11,7 +11,7 @@ configuration.
 * Create and Seed the database with our default data
 * Fix an initial bug when running the application (View past reservations should display old reservations)
 * Add the ability for a person to schedule a future exam
-* Add a 'Score' column to the Exam Table and add scores to past exams
+* Add a 'Score' column to the Reservations Table and add scores to past exams
 * Create a pull request with us so we can review your changes
 
 #### Notes
